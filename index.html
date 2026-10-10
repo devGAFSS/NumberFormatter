@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Number Formatter</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <label for="nrinput">Enter a number&colon;</label>
+            <input type="number" id="nrinput" placeholder="e.g., 1000">
+            <div>
+                <span id="nrresult">Formatted result&colon; 0</span>
+                <script type="module" defer>
+                    import {abbreviateNr} from "./nrformatter.js";
+                    const nrinput = document.getElementById("nrinput");
+                    const nrresult = document.getElementById("nrresult");
+                    nrinput.addEventListener("input", () => {nrresult.innerHTML = `Formatted result&colon; ${abbreviateNr(nrinput.value)}`});
+                </script>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>
