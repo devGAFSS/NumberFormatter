@@ -1,8 +1,5 @@
 <h1>🔢 Number Formatter</h1>
-<p>
-  A simple number formatter that converts large numbers into shorter,
-  more readable values using abbreviations.
-</p>
+<p>A simple number formatter that converts large numbers into shorter, more readable values using abbreviations.</p>
 <h2>✨ Features</h2>
 <ul>
   <li>🔢 Formats large numbers using abbreviations.</li>
